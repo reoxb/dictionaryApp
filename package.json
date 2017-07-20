@@ -4,7 +4,6 @@
   "description": "most commonly use english idioms",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
   },
   "keywords": [
@@ -19,5 +18,8 @@
     "body-parser": "^1.17.2",
     "cors": "^2.8.4",
     "express": "^4.15.3"
-  }
+  },
+  "engines": {
+    "node": "8.1.4"
+  },
 }
