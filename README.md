@@ -1,5 +1,7 @@
 # Diccionario
 
+* [preview](https://arcane-beyond-36047.herokuapp.com)
+
 Diccionario de expresiones idiomaticas en todos los idiomas(extensible a todos los idiomas).
 Una herramienta para el aprendizaje de idiomas de modo inmersivo.
 
