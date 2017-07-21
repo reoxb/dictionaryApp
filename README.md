@@ -1,4 +1,4 @@
-#Diccionario
+# Diccionario
 
 Diccionario de expresiones idiomaticas en todos los idiomas(extensible a todos los idiomas).
 Una herramienta para el aprendizaje de idiomas de modo inmersivo.
@@ -14,35 +14,35 @@ Las palabras individuales, dentro de las frases, no se correlacionan con su sign
 
 Todos los lenguajes cuentan con expresiones idiomaticas.
 
-##Requerimiento
+## Requerimientos
 
-Crear una aplicacion en completa en Node, con express, logeo y base de datos.
+Crear una aplicacion completa en Node, con express, logeo y base de datos.
 (Practicamente crear un API, para expresiones idiomaticas primero en ingles pero extensible a todos lo idiomas)
 
 Pensar en extender la misma aplicion para react y reac-native.
 -> Entonces planificar la estructura del backend.
 
-View:
+### View
 
 Los usuarios entran al sistema y agregan una expresion idiomatica(EI) que hayan aprendidio.
 Cada usuario cuenta con un perfil propio donde puede agregar EI.
-Los logeos a la cuenta deben ser por redes sociales(facebook, twitter, google)
-Dicha EI se guarda en una base de datos(NoSQL), en el perfil de usuario.
+Dicha EI se guarda en una base de datos(NoSQL) en el perfil de usuario.
 
 El usuario debe ver sus expresiones idiomaticas en linea y offline.
-Dependiendo el tema sugerir nuevas EI's de otros usuarios.
+Dependiendo el contexto(tema) de la EI sugerir nuevas EI's de otros usuarios.
 
 Se debe agregar, modificar o eliminar una EI actualizando la BD.
 
-Cada expression idiomatica se puede rankear y se debe agregar sus significado en diferentes lenguajes(partir desde el ingles);
-"CEI" tiene su significado en ingles.
+Cada expression idiomatica se puede rankear por nivel de utilidad y se debe indicar el significado en el lenguaje que fue definida y si es posible en diferentes lenguajes(apartir del ingles);
 
+Los logeos a la cuenta deben ser por redes sociales(facebook, twitter, google)
 Logeo por redes sociales, posibilidad de compartir.
 
 Model:
 
 Guardar en formato JSON
 
+```javascript
 {
   expression: '',
   meanings: {
@@ -52,8 +52,7 @@ Guardar en formato JSON
     ru: ''
   }
 }
-
-dar la posibilidad de escoger el idioma a mostrar.
+```
 
 Mostrar las expresiones idiomaticas guardadas por usuario y mostrar nuevas expresiones de otros usuarios para agregarlas a la lista de propias.
 

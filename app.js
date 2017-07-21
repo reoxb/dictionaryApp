@@ -4,7 +4,8 @@ const app = express();
 const parser = require('body-parser');
 const cors = require('cors');
 
-const port = process.env.PORT || 8080;
+app.set('port', (process.env.PORT || 5000));
+
 const hostname = 'localhost';
 
 let english_idioms = require(__dirname + '/english_idioms.json');
@@ -34,7 +35,8 @@ app.delete("/dictionary-api/:term", (req, res) => {
 	res.json(english_idioms);
 });
 
-app.listen(port, hostname, () =>
-  console.log(`File server running at http://${hostname}:${port}/`)
-);
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
+});
+
 module.exports = app;
